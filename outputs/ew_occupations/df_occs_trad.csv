@@ -1,0 +1,42 @@
+code,label,population
+111,Chief Executives and Senior Officials,0.019253139038886778
+113,Functional Managers and Directors,0.14630393857716753
+114,"Directors in Logistics, Warehousing and Transport",0.002239522965530937
+116,Senior Officers in Protective Services,0.006586674629944286
+121,Managers and Proprietors in Agriculture Related Services,0.007712986166583948
+211,Natural and Social Science Professionals,0.014545883276253585
+214,Web and Multimedia Design Professionals,0.014305913120680873
+215,Conservation and Environment Professionals,0.005791885138255263
+216,Research and Development (R&D) and Other Research Professionals,0.012690431651527606
+224,Veterinarians,0.0029210262981685755
+241,Legal Professionals,0.0335236223227027
+242,Finance Professionals,0.057323094209722605
+243,"Business, Research and Administrative Professionals",0.051085209948579104
+247,Librarians and Related Professionals,0.002910754622774954
+249,Media Professionals,0.02169750005284703
+312,"CAD, Drawing and Architectural Technicians",0.008551541927341444
+324,Veterinary nurses,0.0027815399236204175
+331,Protective Service Occupations,0.052478436180592135
+341,"Artistic, Literary and Media Occupations",0.05104680281449861
+342,Design Occupations,0.010465795172074382
+351,Transport Associate Professionals,0.00403632183511073
+353,Finance Associate Professionals,0.0282022990093639
+411,Administrative Occupations: Government and Related Organisations,0.041049931953872146
+511,Agricultural and Related Trades,0.04426437089263242
+521,"Metal Forming, Welding and Related Trades",0.012457458144411421
+522,"Metal Machining, Fitting and Instrument Making Trades",0.037697048694589154
+523,Vehicle Trades,0.03282142677441704
+525,"Skilled Metal, Electrical and Electronic Trades Supervisors",0.005694676384167805
+541,Textiles and Garments Trades,0.005849942433958338
+542,Printing Trades,0.004285075017469292
+612,Animal Care and Control Services,0.012008779454029192
+811,Process Operatives,0.036635642237248314
+812,Metal Working Machine Operatives,0.007180943154166535
+813,Plant and Machine Operatives,0.013034756074505079
+814,Assemblers and Routine Operatives,0.02778771037209963
+816,"Production, Factory and Assembly Supervisors",0.008671824734849355
+822,Mobile Machine Drivers and Operatives,0.019123031150567578
+823,Other Drivers and Transport Operatives,0.010913134078709617
+911,Elementary Agricultural Occupations,0.008439446687176276
+913,Elementary Process Plant Occupations,0.034072189334666374
+925,Elementary Storage Occupations,0.08155829354423713

@@ -1,0 +1,105 @@
+,code,label
+0,111,Chief Executives and Senior Officials
+1,112,Production Managers and Directors
+2,113,Functional Managers and Directors
+3,114,"Directors in Logistics, Warehousing and Transport"
+4,115,Managers and Directors in Retail and Wholesale
+5,116,Senior Officers in Protective Services
+6,117,Health and Social Services Managers and Directors
+7,121,Managers and Proprietors in Agriculture Related Services
+8,122,Managers and Proprietors in Hospitality and Leisure Services
+9,123,Managers and Proprietors in Health and Care Services
+10,124,"Managers in Logistics, Warehousing and Transport"
+11,125,Managers and Proprietors in Other Services
+12,211,Natural and Social Science Professionals
+13,212,Engineering Professionals
+14,213,Information Technology Professionals
+15,214,Web and Multimedia Design Professionals
+16,215,Conservation and Environment Professionals
+17,216,Research and Development (R&D) and Other Research Professionals
+18,221,Medical Practitioners
+19,222,Therapy Professionals
+20,223,Nursing and Midwifery Professionals
+21,224,Veterinarians
+22,225,Other Health Professionals
+23,231,Teaching and other Educational Professionals
+24,232,Other Educational Professionals
+25,241,Legal Professionals
+26,242,Finance Professionals
+27,243,"Business, Research and Administrative Professionals"
+28,244,Business and Financial Project Management Professionals
+29,245,"Architects, Chartered Architectural Technologists, Planning Officers, Surveyors and Construction Professionals"
+30,246,Welfare Professionals
+31,247,Librarians and Related Professionals
+32,248,Quality and Regulatory Professionals
+33,249,Media Professionals
+34,311,"Science, Engineering and Production Technicians"
+35,312,"CAD, Drawing and Architectural Technicians"
+36,313,Information Technology Technicians
+37,321,Health Associate Professionals
+38,322,Welfare and Housing Associate Professionals
+39,323,Teaching and Childcare Associate Professionals
+40,324,Veterinary nurses
+41,331,Protective Service Occupations
+42,341,"Artistic, Literary and Media Occupations"
+43,342,Design Occupations
+44,343,Sports and Fitness Occupations
+45,351,Transport Associate Professionals
+46,352,Legal Associate Professionals
+47,353,Finance Associate Professionals
+48,354,Business Associate Professionals
+49,355,"Sales, Marketing and Related Associate Professionals"
+50,356,Public Services Associate Professionals
+51,357,"HR, Training and Other Vocational Associate Guidance Professionals"
+52,358,Regulatory Associate Professionals
+53,411,Administrative Occupations: Government and Related Organisations
+54,412,Administrative Occupations: Finance
+55,413,Administrative Occupations: Records
+56,414,Administrative Occupations: Office Managers and Supervisors
+57,415,Other Administrative Occupations
+58,421,Secretarial and Related Occupations
+59,511,Agricultural and Related Trades
+60,521,"Metal Forming, Welding and Related Trades"
+61,522,"Metal Machining, Fitting and Instrument Making Trades"
+62,523,Vehicle Trades
+63,524,Electrical and Electronic Trades
+64,525,"Skilled Metal, Electrical and Electronic Trades Supervisors"
+65,531,Construction and Building Trades
+66,532,Building Finishing Trades
+67,533,Construction and Building Trades Supervisors
+68,541,Textiles and Garments Trades
+69,542,Printing Trades
+70,543,Food Preparation and Hospitality Trades
+71,544,Other Skilled Trades
+72,611,Teaching and Childcare Support Occupations
+73,612,Animal Care and Control Services
+74,613,Caring Personal Services
+75,621,Leisure and Travel Services
+76,622,Hairdressers and Related Services
+77,623,Housekeeping and Related Services
+78,624,Cleaning and Housekeeping Managers and Supervisors
+79,625,Bed and Breakfast and Guest House Owners and Proprietors
+80,631,Community and Civil Enforcement Occupations
+81,711,Sales Assistants and Retail Cashiers
+82,712,Sales Related Occupations
+83,713,Shopkeepers and Sales Supervisors
+84,721,Customer Service Occupations
+85,722,Customer Service Supervisors
+86,811,Process Operatives
+87,812,Metal Working Machine Operatives
+88,813,Plant and Machine Operatives
+89,814,Assemblers and Routine Operatives
+90,815,Construction Operatives
+91,816,"Production, Factory and Assembly Supervisors"
+92,821,Road Transport Drivers
+93,822,Mobile Machine Drivers and Operatives
+94,823,Other Drivers and Transport Operatives
+95,911,Elementary Agricultural Occupations
+96,912,Elementary Construction Occupations
+97,913,Elementary Process Plant Occupations
+98,921,Elementary Administration Occupations
+99,922,Elementary Cleaning Occupations
+100,923,Elementary Security Occupations
+101,924,Elementary Sales Occupations
+102,925,Elementary Storage Occupations
+103,926,Other Elementary Services Occupations

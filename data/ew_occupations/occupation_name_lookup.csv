@@ -1,0 +1,106 @@
+﻿code,name
+-8,Does not apply
+1,111 Chief executives and senior officials
+2,112 Production managers and directors
+3,113 Functional managers and directors
+4,"114 Directors in logistics, warehousing and transport"
+5,115 Managers and directors in retail and wholesale
+6,116 Senior officers in protective services
+7,117 Health and social services managers and directors
+8,121 Managers and proprietors in agriculture related services
+9,122 Managers and proprietors in hospitality and leisure services
+10,123 Managers and proprietors in health and care services
+11,"124 Managers in logistics, warehousing and transport"
+12,125 Managers and proprietors in other services
+13,211 Natural and social science professionals
+14,212 Engineering professionals
+15,213 Information technology professionals
+16,214 Web and multimedia design professionals
+17,215 Conservation and environment professionals
+18,216 Research and development (R&D) and other research professionals
+19,221 Medical practitioners
+20,222 Therapy professionals
+21,223 Nursing and midwifery professionals
+22,224 Veterinarians
+23,225 Other health professionals
+24,231 Teaching and other educational professionals
+25,232 Other educational professionals
+26,241 Legal professionals
+27,242 Finance professionals
+28,"243 Business, research and administrative professionals"
+29,244 Business and financial project management professionals
+30,"245 Architects, chartered architectural technologists, planning officers, surveyors and construction professionals"
+31,246 Welfare professionals
+32,247 Librarians and related professionals
+33,248 Quality and regulatory professionals
+34,249 Media professionals
+35,"311 Science, engineering and production technicians"
+36,"312 CAD, drawing and architectural technicians"
+37,313 Information technology technicians
+38,321 Health associate professionals
+39,322 Welfare and housing associate professionals
+40,323 Teaching and childcare associate professionals
+41,324 Veterinary nurses
+42,331 Protective service occupations
+43,"341 Artistic, literary and media occupations"
+44,342 Design occupations
+45,343 Sports and fitness occupations
+46,351 Transport associate professionals
+47,352 Legal associate professionals
+48,353 Finance associate professionals
+49,354 Business associate professionals
+50,"355 Sales, marketing and related associate professionals"
+51,356 Public services associate professionals
+52,"357 HR, training and other vocational associate guidance professionals"
+53,358 Regulatory associate professionals
+54,411 Administrative occupations: Government and related organisations
+55,412 Administrative occupations: Finance
+56,413 Administrative occupations: Records
+57,414 Administrative occupations: Office managers and supervisors
+58,415 Other administrative occupations
+59,421 Secretarial and related occupations
+60,511 Agricultural and related trades
+61,"521 Metal forming, welding and related trades"
+62,"522 Metal machining, fitting and instrument making trades"
+63,523 Vehicle trades
+64,524 Electrical and electronic trades
+65,"525 Skilled metal, electrical and electronic trades supervisors"
+66,531 Construction and building trades
+67,532 Building finishing trades
+68,533 Construction and building trades supervisors
+69,541 Textiles and garments trades
+70,542 Printing trades
+71,543 Food preparation and hospitality trades
+72,544 Other skilled trades
+73,611 Teaching and childcare support occupations
+74,612 Animal care and control services
+75,613 Caring personal services
+76,621 Leisure and travel services
+77,622 Hairdressers and related services
+78,623 Housekeeping and related services
+79,624 Cleaning and housekeeping managers and supervisors
+80,625 Bed and breakfast and guest house owners and proprietors
+81,631 Community and civil enforcement occupations
+82,711 Sales assistants and retail cashiers
+83,712 Sales related occupations
+84,713 Shopkeepers and sales supervisors
+85,721 Customer service occupations
+86,722 Customer service supervisors
+87,811 Process operatives
+88,812 Metal working machine operatives
+89,813 Plant and machine operatives
+90,814 Assemblers and routine operatives
+91,815 Construction operatives
+92,"816 Production, factory and assembly supervisors"
+93,821 Road transport drivers
+94,822 Mobile machine drivers and operatives
+95,823 Other drivers and transport operatives
+96,911 Elementary agricultural occupations
+97,912 Elementary construction occupations
+98,913 Elementary process plant occupations
+99,921 Elementary administration occupations
+100,922 Elementary cleaning occupations
+101,923 Elementary security occupations
+102,924 Elementary sales occupations
+103,925 Elementary storage occupations
+104,926 Other elementary services occupations

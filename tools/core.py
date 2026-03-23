@@ -93,15 +93,14 @@ def get_bregman_information(Z:np.ndarray, alpha:float, joint:np.ndarray, cluster
     
     Returns:
         information : float | dict
-            Either total bregman informaiton or {cluster_id: information}
+            Either total bregman information or {cluster_id: information}
     """
     joint = joint.copy()
-    joint /= joint.sum()
     
     if clustering is not None:
         information = {}
         for c_id, idxs in clustering.items():
-            information[c_id] = get_bregman_information(Z, alpha, joint[idxs, :])
+            information[c_id] = get_bregman_information(Z, alpha, joint[idxs, :], clustering=None)
         return information
 
     weights = joint.sum(axis=1)
@@ -111,7 +110,7 @@ def get_bregman_information(Z:np.ndarray, alpha:float, joint:np.ndarray, cluster
 
     joint /= weights[:, np.newaxis]
 
-    return get_entropy(Z, alpha, mean) - (get_entropy(Z, alpha, joint) * weights).sum()
+    return weights.sum()*get_entropy(Z, alpha, mean) - (get_entropy(Z, alpha, joint) * weights).sum()
 
 
 ## Functions specifically for alpha = 2. Use for faster computation.

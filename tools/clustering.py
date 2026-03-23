@@ -224,7 +224,7 @@ class Clustering:
         return np.array(centers), np.array(new_labels), between_cluster_information
 
 class Result:
-    def __init__(self, vectors:np.ndarray, weights:np.array, Z:np.ndarray, alpha:float, centers:np.ndarray, labels, save_data:bool=True):
+    def __init__(self, vectors:np.ndarray, weights:np.ndarray, Z:np.ndarray, alpha:float, centers:np.ndarray, labels, save_data:bool=True):
         self.centers = centers
         self.labels = labels
 
@@ -239,51 +239,35 @@ class Result:
             self.alpha = alpha
 
         self.k = self.centers.shape[0]
-        self.total_information = 0.
-        self.between_cluster = 0.
-        
-        self.list_within_cluster_information = np.zeros(self.k)
-        self.list_between_cluster_information = np.zeros(self.k)
-        self.cluster_weights = np.zeros(self.k)
-
-        self.list_within_cluster_contribution = []
-
         self._compute_informations(vectors, weights, Z, alpha)
     
     def _compute_informations(self, vectors, weights, Z, alpha):
         global_mean = (vectors * weights[:, np.newaxis]).sum(axis=0)
         divergence = lambda p,q: get_divergence(Z=Z, alpha=alpha, p=p, q=q)
 
-        for p, w, cluster_idx in zip(vectors, weights, self.labels):
-            self.total_information += w * divergence(p, global_mean)
-            div_to_center = divergence(p, self.centers[cluster_idx])
-            self.list_within_cluster_contribution.append(w * div_to_center)
-            self.list_within_cluster_information[cluster_idx] += w * div_to_center
-            self.cluster_weights[cluster_idx] += w
+        joint = vectors*weights[:, np.newaxis]
+        self.total_information = get_bregman_information(Z, alpha, joint=joint)
+        dict_idxs = {i: np.where(self.labels==i)[0] for i in range(self.k)}
+         
+        dict_bi = get_bregman_information(Z, alpha, joint, dict_idxs)
+        self.arr_within_cluster_information = np.array([dict_bi[i] for i in range(self.k)])
+        self.arr_cluster_weights = np.array([weights[dict_idxs[i]].sum() for i in range(self.k)])
 
+        self.arr_between_cluster_information = np.zeros(self.k)
         for cluster_idx, q in enumerate(self.centers):
-            div_to_global = self.cluster_weights[cluster_idx] * divergence(q, global_mean)
-            self.list_between_cluster_information[cluster_idx] = div_to_global
-        
-        self.between_cluster = self.list_between_cluster_information.sum()
-        self.list_within_cluster_contribution = np.array(self.list_within_cluster_contribution)
+            self.arr_between_cluster_information[cluster_idx] = self.arr_cluster_weights[cluster_idx] * divergence(q, global_mean)
 
-        self.between_cluster /= self.total_information
-        self.list_between_cluster_information /= self.total_information
-        self.list_within_cluster_contribution /= self.total_information
-        self.list_within_cluster_information /= self.total_information
+        self.arr_between_cluster_information /= self.total_information
+        self.arr_within_cluster_information /= self.total_information
 
-    def get_stats(self):
-        return {
-            cluster_idx: [(self.labels==cluster_idx).sum(), self.cluster_weights[cluster_idx], self.list_within_cluster_information[cluster_idx], self.list_between_cluster_information[cluster_idx]] for cluster_idx in range(self.k)
-        }
+        self.information_explained = self.arr_between_cluster_information.sum()
 
     def describe(self,):
         print("Results of clustering\n-----------------")
-        print(f"{len(self.list_within_cluster_contribution)} distributions of length {self.centers.shape[1]} into {self.k} clusters.")
-        print(f"Fraction of information captured: {np.round(self.between_cluster, 3)}")
+        print(f"{len(self.labels)} distributions of length {self.centers.shape[1]} into {self.k} clusters.")
+        print(f"Fraction of information explained: {np.round(self.information_explained, 3)}")
         for cluster_idx in range(self.k):
             print("-------------")
             print(f"Cluster {cluster_idx}:")
-            print(f"{(self.labels==cluster_idx).sum()} points with {np.round(self.cluster_weights[cluster_idx], 3)} weight.")
-            print(f"Within-cluster information={np.round(self.list_within_cluster_information[cluster_idx], 3)}, Between-cluster contribution={np.round(self.list_between_cluster_information[cluster_idx], 3)}")  
+            print(f"{(self.labels==cluster_idx).sum()} points with {np.round(self.arr_cluster_weights[cluster_idx], 3)} weight.")
+            print(f"Within-cluster information={np.round(self.arr_within_cluster_information[cluster_idx], 3)}, Between-cluster contribution={np.round(self.arr_between_cluster_information[cluster_idx], 3)}")  

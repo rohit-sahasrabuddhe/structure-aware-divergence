@@ -1,6 +1,8 @@
 # structure-aware-divergence
 
-This repository accompanies Sahasrabuddhe and Lambiotte. We provide software to implement the methods proposed in the paper and include notebooks to replicate the results.
+This repository accompanies Sahasrabuddhe and Lambiotte (2026): https://arxiv.org/abs/2603.22237.
+
+We provide software to implement the methods proposed in the paper and include notebooks to replicate the results.
 
 `tools` contains the code for our structure-aware methods.
 - `core.py` contains core tools for computing entropies, divergences, and Bregman information.
@@ -12,11 +14,11 @@ This repository accompanies Sahasrabuddhe and Lambiotte. We provide software to 
 - `ew_occupations` contains intermediate files and data reported in the paper
 
 `data` contains the empirical datasets we use.
-- `rutor_glacier` for the Rutor glacier experiment from the `adiv` R package https://cran.r-project.org/web/packages/adiv/index.html, originally published by Caccianaga et al. https://doi.org/10.1111/j.0030-1299.2006.14107.x
+- `rutor_glacier` for the Rutor glacier experiment from the `adiv` R package: https://cran.r-project.org/web/packages/adiv/index.html, originally published by Caccianiga et al.: https://doi.org/10.1111/j.0030-1299.2006.14107.x
 - `ew_occupations` 
-    - 2021 Census of England and Wales, originally from Nomis https://www.nomisweb.co.uk/datasets/c2021ts064
-    - Occupations to skills mapping from ONET https://www.onetcenter.org/dictionary/30.2/excel/skills.html
-    - SOC2020 to ONET occupation codes from NFER https://www.nfer.ac.uk/key-topics-expertise/education-to-employment/the-skills-imperative-2035/resources/systematic-mapping-of-soc-2020/
+    - 2021 Census of England and Wales, originally from Nomis: https://www.nomisweb.co.uk/datasets/c2021ts064
+    - Occupations to skills mapping from ONET: https://www.onetcenter.org/dictionary/30.2/excel/skills.html
+    - SOC2020 to ONET occupation codes from NFER: https://www.nfer.ac.uk/key-topics-expertise/education-to-employment/the-skills-imperative-2035/resources/systematic-mapping-of-soc-2020/
 
 
 The notebooks in the main directory contain code to reproduce our experiments.
@@ -35,4 +37,6 @@ Our software is written in Python 3.12.8. In addition to the standard libraries,
 - `matplotlib 3.10.0` (for visualisations)
 - `seaborn 0.13.2` (for visualisations)
 - `ot 0.9.5` (for Optimal Transport methods)
-Our core methods rely only on `numpy`. We saved some results with `pickle 4.0`. We thank the developers of these packages for maintaining them.
+Our core methods rely only on `numpy`. We saved some results with `pickle 4.0`.
+
+We thank the teams publishin and maintaining the data and developing open source software libraries.
